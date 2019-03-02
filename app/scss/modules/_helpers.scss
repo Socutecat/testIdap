@@ -1,0 +1,12 @@
+/*flex-box mixin*/
+
+
+@mixin d-flex ($flex-d: null, $justify-content: null, $align-items: null , $flex-wrap: null) {
+	display: flex;
+	flex-direction: $flex-d;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+}
+
+//

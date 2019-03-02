@@ -1,0 +1,133 @@
+// header styles
+
+.acc-header {
+	@include d-flex ($flex-d: column, $justify-content:flex-start, $align-items:center);
+	padding-top: 30px;
+	padding-bottom: 54px;
+	background-color: var(--header-color);
+
+	.user-avatar {
+		position: relative;
+		.count {
+			position: absolute;
+		    top: -5px;
+    		right: 15px;
+			display: inline-block;
+			width: 31px;
+			height: 31px;
+			text-align: center;
+			line-height: 1.2;
+			background-color: var(--red);
+			border-radius: 50%;
+			color: var(--white);
+		}
+	}
+	
+	.setting-listing {
+		@include d-flex ($flex-d: column);
+
+		.setting-upper-component {
+			.setting-component {
+				@include d-flex ($flex-d: column, $justify-content:flex-start, $align-items:center);
+				margin-top: 30px;
+				position: relative;
+
+				&:hover .vertical-line {
+					position: absolute;
+					height: 115px;
+					top: 26px;
+					left: -33px;
+					width: 4px;
+					background-color: #ff503f;
+					border-radius: 3px;
+					transition: all .3s ease-in-out;
+				}
+
+				.dots-select {
+					@include d-flex ($flex-d: row);
+					margin-bottom: 35px;
+
+					.dots {
+						display: block;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background-color: #595959;
+						padding-right: 6px;
+
+						&:last-child {
+							padding-right: 0;
+						}
+
+					}
+				}
+
+				.icon {
+					font-size: 55px;
+					&:hover{
+						color: var(--red);
+						transition: all .3s ease-in-out;
+					}
+				}
+
+				.setting-text {
+					font-size: 18px;
+					color: var(--white);
+					margin-top: 12px;
+				}
+			}
+		}
+		.setting-lower-component {
+			margin-top: 473px;;
+			.setting-component {
+				@include d-flex ($flex-d: column, $justify-content:flex-start, $align-items:center);
+				margin-top: 30px;
+				position: relative;
+
+				&:hover .vertical-line {
+					position: absolute;
+					height: 115px;
+					top: 26px;
+					left: -33px;
+					width: 4px;
+					background-color: #ff503f;
+					border-radius: 3px;
+					transition: all .3s ease-in-out;
+				}
+
+				.dots-select {
+					@include d-flex ($flex-d: row);
+					margin-bottom: 35px;
+
+					.dots {
+						display: block;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background-color: #595959;
+						padding-right: 6px;
+
+						&:last-child {
+							padding-right: 0;
+						}
+
+					}
+				}
+
+				.icon {
+					font-size: 55px;
+					&:hover{
+						color: var(--red);
+						transition: all .3s ease-in-out;
+					}
+				}
+
+				.setting-text {
+					font-size: 18px;
+					color: var(--white);
+					margin-top: 12px;
+				}
+			}
+		}
+	}
+}
