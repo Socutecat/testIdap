@@ -6,6 +6,8 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: var(--nav-color);
+    display: flex;
+  	flex-direction: column;
 
 	&_avatar {
 		position: relative;
@@ -28,7 +30,8 @@
 
 	&_element {
 		position: relative;
-		margin-bottom: 38px;
+		margin-bottom: 1px;
+		cursor: pointer;
 
 		&:last-of-type {
 			margin-bottom: 0;
@@ -51,9 +54,18 @@
 		}
 
 	}
+	&_element:nth-child(4){
+		margin-top: auto;
+	}
+	&_element:nth-child(5){
+		margin-top: auto;
+	}
 
 	&_list {
 		text-align: center;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
 	}
 
 	&_icon {
@@ -103,8 +115,6 @@
 		color: var(--white);
 	}
 
-	.nav-panel_container_down {
-		margin-top: 412px;
 
 		.nav-panel_element {
 			&::before {
@@ -144,24 +154,3 @@
 
 
 
-
-	.nav-panel_element_down {
-		position: relative;
-
-		&::before {
-			position: absolute;
-			content: '';
-			height: 109px;
-			width: 4px;
-			top: 20px;
-			left: -17px;
-			background-color: var(--red);
-			opacity: 0;
-		}
-
-		&:hover::before {
-			opacity: 1;
-			transition: all .5s;
-		}
-	}
-}

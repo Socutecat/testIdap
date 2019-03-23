@@ -2544,25 +2544,24 @@ body {
 .app-wrapper {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  padding: 25px; }
 
 .application {
   position: relative;
   min-height: 600px;
   min-width: 1024px;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  border: 1px solid red;
+  overflow: hidden; }
 
 .nav-panel_ava {
   width: 88px;
@@ -2576,7 +2575,14 @@ body {
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: var(--nav-color); }
+  background-color: var(--nav-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .nav-panel_avatar {
     position: relative;
     margin-bottom: 32px; }
@@ -2594,7 +2600,8 @@ body {
     color: var(--white); }
   .nav-panel_element {
     position: relative;
-    margin-bottom: 38px; }
+    margin-bottom: 1px;
+    cursor: pointer; }
     .nav-panel_element:last-of-type {
       margin-bottom: 0; }
     .nav-panel_element::before {
@@ -2610,8 +2617,22 @@ body {
       opacity: 1;
       -webkit-transition: all .5s;
       transition: all .5s; }
+  .nav-panel_element:nth-child(4) {
+    margin-top: auto; }
+  .nav-panel_element:nth-child(5) {
+    margin-top: auto; }
   .nav-panel_list {
-    text-align: center; }
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .nav-panel_icon {
     font-size: 45px;
     margin-bottom: 10px;
@@ -2650,48 +2671,31 @@ body {
   .nav-panel .nav-panel_element_text {
     letter-spacing: -0.025em;
     color: var(--white); }
-  .nav-panel .nav-panel_container_down {
-    margin-top: 412px; }
-    .nav-panel .nav-panel_container_down .nav-panel_element::before {
-      position: absolute;
-      content: '';
-      height: 109px;
-      width: 4px;
-      top: 5px;
-      left: -17px;
-      background-color: var(--red);
-      opacity: 0; }
-    .nav-panel .nav-panel_container_down .nav-panel_element:hover::before {
-      opacity: 1;
-      -webkit-transition: all .5s;
-      transition: all .5s; }
-    .nav-panel .nav-panel_container_down .nav-panel_icon_count {
-      display: inline-block;
-      position: absolute;
-      top: -20px;
-      right: 0;
-      width: 31px;
-      height: 31px;
-      text-align: center;
-      line-height: 31px;
-      border-radius: 50%;
-      background-color: var(--red);
-      color: var(--white); }
-  .nav-panel .nav-panel_element_down {
-    position: relative; }
-    .nav-panel .nav-panel_element_down::before {
-      position: absolute;
-      content: '';
-      height: 109px;
-      width: 4px;
-      top: 20px;
-      left: -17px;
-      background-color: var(--red);
-      opacity: 0; }
-    .nav-panel .nav-panel_element_down:hover::before {
-      opacity: 1;
-      -webkit-transition: all .5s;
-      transition: all .5s; }
+  .nav-panel .nav-panel_element::before {
+    position: absolute;
+    content: '';
+    height: 109px;
+    width: 4px;
+    top: 5px;
+    left: -17px;
+    background-color: var(--red);
+    opacity: 0; }
+  .nav-panel .nav-panel_element:hover::before {
+    opacity: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+  .nav-panel .nav-panel_icon_count {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 50%;
+    background-color: var(--red);
+    color: var(--white); }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -2699,5 +2703,10 @@ body {
   font-weight: 400;
   line-height: 1.2;
   color: var(--primary); }
+
+.content-panel {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 /*# sourceMappingURL=style.css.map */
