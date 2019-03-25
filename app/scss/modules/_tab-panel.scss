@@ -1,0 +1,56 @@
+/*styles for tabs panel*/
+.tabs__panel{
+  display: flex;
+  background-color: var(--grey);
+  border-top: 1px solid red;
+  .tabs_panel-tab {
+	display: flex;
+	background-color: #f8f8f8;
+  }
+}
+input {
+  display: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 69px;
+  position: relative;
+  font-size: 24px;
+  transition: all .2s ease-out;
+  &:hover {
+	background-color: #fff;
+  }
+}
+label[for*='1']:before {
+  content: '\f017';
+  font-family: 'FontAwesome';
+  font-size: 44px;
+  margin-right: 13px;
+  color: #d5d5d5;
+}
+label[for*='1']:after {
+  content: '3';
+  position: absolute;
+  width:29px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--count-color);
+  top: 8px;
+  right: 37px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+}
+input:checked + label {
+  border-right: 1px solid #d3d7da;
+  border-top: 1px solid #d3d7da;
+  border-bottom: 1px solid #fff;
+  border-left: transparent;
+}
