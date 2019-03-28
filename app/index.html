@@ -1,118 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IdapApp</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width height=device-height user-scalable=yes"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<title>IdapApp</title>
-	<meta name="format-detection" content="telephone=no">
-	<meta name=viewport content="width=device-width height=device-height user-scalable=yes">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-
-</head>
-
-<body>
-		<div class="app__wrapper">
-			<div class="application">
-				<div class="navbar">
-					<div class="navbar__wrap">
-						<div class="logo navbar__logo">
-							<img src="img/Bilder/dashboard_layout_03.jpg" class="navbar__ava" alt="ava">
-							<span class="navbar__count">2</span>
-						</div>
-						<ul class="navbar__list">
-							<li class="navbar__list-element">
-									<div class="navbar__list-dots">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-									<i class="fa-black-tie fa navbar__icon"></i>
-									<p class="navbar__list-text">Board</p>
-							</li>
-							<li class="navbar__list-element">
-								<div class="navbar__list-dots">
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-								<i class=" fa-th-list fa navbar__icon"></i>
-								<span class="navbar__icon-span">9</span>
-								<p class="navbar__list-text">Projects</p>
-
-							</li>
-							<li class="navbar__list-element">
-								<div class="navbar__list-dots">
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-								<i class="fa-crosshairs fa navbar__icon"></i>
-								<p class="navbar__list-text">Settings</p>
-							</li>
-							<li class="navbar__list-element upgrade__element">
-								<i class="fa-asterisk fa navbar__icon"></i>
-								<span class="navbar__icon-span-logout">3</span>
-								<p class="navbar__list-text">Upgrade</p>
-							</li>
-							<li class="navbar__list-element">
-								<div class="navbar__list-dots">
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-								<i class="fa-minus-circle fa navbar__icon"></i>
-								<p class="navbar__list-text">Logout</p>
-							</li>
-						</ul>
-					</div>
-					<!-- /navbar__wrap -->
+  <body>
+    <div class="app__wrapper">
+      <div class="application">
+        <div class="navbar">
+          <div class="navbar__wrap">
+            <div class="logo navbar__logo">
+              <img
+                src="img/Bilder/dashboard_layout_03.jpg"
+                class="navbar__ava"
+                alt="ava"
+              />
+              <span class="navbar__count">2</span>
+            </div>
+            <ul class="navbar__list">
+              <li class="navbar__list-element">
+                <div class="navbar__list-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <i class="fa-black-tie fa navbar__icon"></i>
+                <p class="navbar__list-text">Board</p>
+              </li>
+              <li class="navbar__list-element">
+                <div class="navbar__list-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <i class=" fa-th-list fa navbar__icon"></i>
+                <span class="navbar__icon-span">9</span>
+                <p class="navbar__list-text">Projects</p>
+              </li>
+              <li class="navbar__list-element">
+                <div class="navbar__list-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <i class="fa-crosshairs fa navbar__icon"></i>
+                <p class="navbar__list-text">Settings</p>
+              </li>
+              <li class="navbar__list-element upgrade__element">
+                <i class="fa-asterisk fa navbar__icon"></i>
+                <span class="navbar__icon-span-logout">3</span>
+                <p class="navbar__list-text">Upgrade</p>
+              </li>
+              <li class="navbar__list-element">
+                <div class="navbar__list-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <i class="fa-minus-circle fa navbar__icon"></i>
+                <p class="navbar__list-text">Logout</p>
+              </li>
+            </ul>
+          </div>
+          <!-- /navbar__wrap -->
+        </div>
+        <!-- /.navbar -->
+        <div class="content__panel">
+          <div class="content__panel-heading">
+            <div class="content__panel-heading-left">
+              <div class="content__panel-heading-left-icon">
+                <span class="content__panel-heading-left-icon-round">
+                  <i
+                    class=" fa-refresh fa content__panel-heading-left-icon-picture"
+                  ></i
+                ></span>
+              </div>
+              <div class="content__panel-heading-left-box">
+                <p>Dashboard</p>
+              </div>
+            </div>
+            <div class="content__panel-heading-right">
+              <div class="content__panel-heading-right-icon">
+                <span class="content__panel-heading-right-icon-round">
+                  <i
+                    class="fa-angle-down fa content__panel-heading-right-icon-picture "
+                  ></i
+                ></span>
+              </div>
+              <div class="content__panel-heading-right-box">
+                <i
+                  class="fa-external-link fa content__panel-heading-right-box-icon "
+                ></i>
+                <p class="content__panel-heading-right-box-text">
+                  5 user online
+                </p>
+                <span
+                  class="fa-angle-down fa content__panel-heading-right-box-picture"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <!-- /.content__panel-heading -->
+			<div class="tabs">
+				<div class="tabs__sidebar">
+					<button class="tabs__button tabs__button-active" data-for-tab="1">Active Projects</button>
+					<button class="tabs__button" data-for-tab="2">Messenger</button>
+					<p class="tabs__button-text">Search Project, User, Task, etc...</p>
 				</div>
-				<!-- /.navbar -->
-					<div class="content__panel">
-						<div class="content__panel-heading">
-							<div class="content__panel-heading-left">
-								<div class="content__panel-heading-left-icon">
-									<span class="content__panel-heading-left-icon-round">
-										<i class=" fa-refresh fa content__panel-heading-left-icon-picture"></i></span>
-								</div>
-								<div class="content__panel-heading-left-box">
-									<p>Dashboard</p>
-								</div>
-							</div>
-							<div class="content__panel-heading-right">
-								<div class="content__panel-heading-right-icon">
-									<span class="content__panel-heading-right-icon-round">
-										<i class="fa-angle-down fa content__panel-heading-right-icon-picture "></i></span>
-								</div>
-								<div class="content__panel-heading-right-box">
-									<i class="fa-external-link fa content__panel-heading-right-box-icon "></i>
-									<p class="content__panel-heading-right-box-text">5 user online</p>
-									<span class="fa-angle-down fa content__panel-heading-right-box-picture"></span>
-								</div>
-							</div>
+				<!-- /.tabs__sidebar -->
+				<div class="tabs__sidebar-content">
+					<div class="tabs__sidebar-container">
+						<p class="tabs__button-text-container">Search a Project with Name, Task, User...</p>
+						<div class="tabs__sidebar-container-box">
+							<p class="tabs__sidebar-container-box-text"><span>New Projects </span>(descending)</p>
 						</div>
-						<!-- /.content__panel-heading -->
-						<div class="tabs__panel">
-							<div class="tabs_panel-tab">
-								<div class="tabs_panel-tab-one">
-									<input id="tab1" type="radio" name="tabs" checked>
-									<label for="tab1">Active projects</label>
-								</div>
-								<div class="tabs_panel-tab-two">
-									<input id="tab2" type="radio" name="tabs">
-									<label for="tab2">Dribbble</label>
-
-								</div>
+							<div class="icon-box">
+								<i class="fa fa-plus-circle"></i>
 							</div>
-						</div>
-						<!-- /.tabset__panel -->
 					</div>
-					<!-- /.content__panel -->
-			</div>
-			<!-- /.application -->
-		</div>
-		<!-- /.app__wrapper -->
-</body>
+					<!-- /.tabs__sidebar-container-->
+					<div class="tabs__sidebar-container">
+						<div class="tabs__sidebar-container-percent">
+							<span>23%</span>
+						</div>
+						<p class="tabs__sidebar-container-percent-text">Create Contact Formular</p>
+						<div class="tabs__sidebar-container-box-worlda">Worlda</div>
+						<div class="icon-box">
+							<i class="fa fa-plus-circle"></i>
+						</div>
+						<div class="icon-box">
+							<i class="fa fa-plus-circle"></i>
+						</div>
+					</div>
+					<div class="tabs__sidebar-chat">
 
+					</div>
+				</div>
+				<!-- /.tabs__sidebar-content -->
+			</div>
+			<!-- /.tabs -->
+        </div>
+        <!-- /.content__panel -->
+      </div>
+      <!-- /.application -->
+    </div>
+    <!-- /.app__wrapper -->
+  </body>
 </html>
