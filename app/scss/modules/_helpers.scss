@@ -9,3 +9,26 @@
 	flex-wrap: $flex-wrap;
 }
 
+/*helpers class*/
+
+
+.bgc-primary-40 {
+  background-color: var(--primary40);
+}
+
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.dark {
+  background-color: var(--white);
+}
+
+.fw-bold {
+  font-weight: bold;
+}
