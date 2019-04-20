@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/modules/_avatar-content-dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/modules/_avatar-content-dropdown.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/modules/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/modules/_helpers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/modules/_tab-panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/modules/_tab-panel.scss" afterDir="false" />
     </list>
@@ -38,8 +37,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="230" column="60" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
+                <state relative-caret-position="365">
+                  <caret line="338" column="33" selection-start-line="337" selection-start-column="14" selection-end-line="338" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -108,8 +116,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/modules/_variables.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+                <state relative-caret-position="285">
+                  <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -117,11 +125,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/modules/_tab-panel.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="498">
-                  <caret line="567" column="16" selection-start-line="567" selection-start-column="16" selection-end-line="567" selection-end-column="16" />
-                  <folding>
-                    <marker date="1554051826126" expanded="true" signature="2:4440" ph="..." />
-                  </folding>
+                <state relative-caret-position="384">
+                  <caret line="298" column="18" selection-start-line="298" selection-start-column="18" selection-end-line="298" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -129,8 +134,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/modules/_helpers.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="821">
-                  <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+                <state relative-caret-position="779">
+                  <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -138,7 +143,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/modules/_avatar-content-dropdown.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
+                <state relative-caret-position="1045">
                   <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
                 </state>
               </provider>
@@ -153,6 +158,7 @@
       <list>
         <option value="Sass File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -164,6 +170,8 @@
       <find>worl</find>
       <find>last</find>
       <find>panor</find>
+      <find>init</find>
+      <find>left-inner-text</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,6 +194,7 @@
         <option value="$PROJECT_DIR$/app/scss/modules/_global.scss" />
         <option value="$PROJECT_DIR$/app/scss/modules/_avatar-content-dropdown.scss" />
         <option value="$PROJECT_DIR$/app/scss/modules/_helpers.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/script.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scss/modules/_tab-panel.scss" />
       </list>
@@ -211,8 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,19 +231,6 @@
               <item name="testIdap" type="b2602c69:ProjectViewProjectNode" />
               <item name="testIdap" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testIdap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testIdap" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testIdap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testIdap" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="Bilder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testIdap" type="b2602c69:ProjectViewProjectNode" />
@@ -255,14 +249,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554051918220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555781618831" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SCSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JsHomeWorks/dz8" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -319,7 +315,15 @@
       <workItem from="1553882353005" duration="702000" />
       <workItem from="1553933710085" duration="1694000" />
       <workItem from="1553935449050" duration="28604000" />
-      <workItem from="1554020251966" duration="25388000" />
+      <workItem from="1554020251966" duration="25654000" />
+      <workItem from="1555052477800" duration="1912000" />
+      <workItem from="1555095640358" duration="284000" />
+      <workItem from="1555095998622" duration="639000" />
+      <workItem from="1555143236617" duration="75000" />
+      <workItem from="1555265561450" duration="124000" />
+      <workItem from="1555742658910" duration="811000" />
+      <workItem from="1555776431484" duration="5186000" />
+      <workItem from="1555781876212" duration="1078000" />
     </task>
     <task id="LOCAL-00001" summary="for artem">
       <created>1553336393372</created>
@@ -332,13 +336,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130133000" />
+    <option name="totallyTimeSpent" value="140508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.104477614" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1119403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,7 +358,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.27090302" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.27090302" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.2006689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -433,10 +436,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/modules/avatar-content.scss" />
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="338" column="33" selection-start-line="337" selection-start-column="14" selection-end-line="338" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3933">
           <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/modules/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <marker date="1553957042454" expanded="true" signature="324:390" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -461,23 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/modules/_avatar-content-dropdown.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/modules/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <marker date="1553957042454" expanded="true" signature="324:390" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -485,34 +495,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/modules/_helpers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/modules/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/scss/modules/_helpers.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="230" column="60" selection-start-line="230" selection-start-column="60" selection-end-line="230" selection-end-column="60" />
+        <state relative-caret-position="779">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/modules/_avatar-content-dropdown.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/modules/_tab-panel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="567" column="16" selection-start-line="567" selection-start-column="16" selection-end-line="567" selection-end-column="16" />
-          <folding>
-            <marker date="1554051826126" expanded="true" signature="2:4440" ph="..." />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="298" column="18" selection-start-line="298" selection-start-column="18" selection-end-line="298" selection-end-column="18" />
         </state>
       </provider>
     </entry>
