@@ -3018,9 +3018,10 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 32px;
+  padding-top: 32px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin-bottom: 30px; }
   .summary__wrap .left-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3040,7 +3041,7 @@ body {
     border: 1px solid red;
     overflow: auto;
     overflow-x: hidden;
-    max-height: 640px; }
+    max-height: 600px; }
     .summary__wrap .left-block .input-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
