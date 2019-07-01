@@ -250,7 +250,9 @@ body {
   --grey-70: #a2b7c6;
   --primary20: #264f6f;
   --primary30: #a6a6a6;
-  --primary40: #f6f6f6; }
+  --primary40: #f6f6f6;
+  --primary50: #909090;
+  --primary60: #8da5b6; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2610,6 +2612,13 @@ body {
   overflow: hidden;
   border-radius: 50%; }
 
+.avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  border-radius: 50%; }
+
 /*Navbar styles*/
 .navbar {
   background-color: #252c32;
@@ -3029,9 +3038,8 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 72%;
-    flex: 1 1 72%;
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3190,8 +3198,8 @@ body {
         border: 1px solid var(--primary);
         background-color: var(--white);
         color: #e2e3e3;
-        -webkit-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out; }
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
         .summary__wrap .input-dropdowns .right-inner .init_icon:hover {
           background-color: var(--red); }
       .summary__wrap .input-dropdowns .right-inner .avatar-block .ava {
@@ -3214,17 +3222,17 @@ body {
     .summary__wrap .project__block-text {
       color: var(--primary); }
       .summary__wrap .project__block-text::after {
-        content: '\f105';
+        content: "\f105";
         font-family: FontAwesome;
         margin-left: 10px; }
   .summary__wrap .right-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 28%;
-    flex-basis: 28%;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
     border: 1px solid fuchsia;
-    margin-left: 30px; }
+    margin-left: 20px; }
 
 /*ava styles*/
 .tabs__sidebar-container {
@@ -3305,5 +3313,43 @@ body {
     height: 35px;
     overflow: hidden;
     border-radius: 50%; }
+
+.users-listing {
+  width: 100%; }
+  .users-listing-online {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    padding-left: 32px;
+    border-bottom: 1px solid #e2e3e3; }
+  .users-listing .users-ava {
+    position: relative;
+    margin-right: 10px; }
+    .users-listing .users-ava .count {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--green);
+      border: 1px solid var(--white); }
+  .users-listing .users-description-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary50);
+    white-space: nowrap; }
+    .users-listing .users-description-text span {
+      font-weight: bold;
+      color: var(--primary); }
+  .users-listing .users-description-status {
+    color: var(--primary60);
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

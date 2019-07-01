@@ -1,365 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>IdapApp</title>
-    <meta name="format-detection" content="telephone=no" />
-    <meta
-      name="viewport"
-      content="width=device-width height=device-height user-scalable=yes"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="app__wrapper">
-      <div class="application">
-        <div class="navbar">
-          <div class="navbar__wrap">
-            <div class="logo navbar__logo">
-              <img
-                src="img/Bilder/dashboard_layout_03.jpg"
-                class="navbar__ava"
-                alt="ava"
-              />
-              <span class="navbar__count">2</span>
-            </div>
-            <ul class="navbar__list">
-              <li class="navbar__list-element">
-                <div class="navbar__list-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <i class="fa-black-tie fa navbar__icon"></i>
-                <p class="navbar__list-text">Board</p>
-              </li>
-              <li class="navbar__list-element">
-                <div class="navbar__list-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <i class=" fa-th-list fa navbar__icon"></i>
-                <span class="navbar__icon-span">9</span>
-                <p class="navbar__list-text">Projects</p>
-              </li>
-              <li class="navbar__list-element">
-                <div class="navbar__list-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <i class="fa-crosshairs fa navbar__icon"></i>
-                <p class="navbar__list-text">Settings</p>
-              </li>
-              <li class="navbar__list-element upgrade__element">
-                <i class="fa-asterisk fa navbar__icon"></i>
-                <span class="navbar__icon-span-logout">3</span>
-                <p class="navbar__list-text">Upgrade</p>
-              </li>
-              <li class="navbar__list-element">
-                <div class="navbar__list-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <i class="fa-minus-circle fa navbar__icon"></i>
-                <p class="navbar__list-text">Logout</p>
-              </li>
-            </ul>
-          </div>
-          <!-- /navbar__wrap -->
-        </div>
-        <!-- /.navbar -->
-        <div class="content__panel">
-          <div class="content__panel-heading">
-            <div class="content__panel-heading-left">
-              <div class="content__panel-heading-left-icon">
-                <span class="content__panel-heading-left-icon-round">
-                  <i
-                    class=" fa-refresh fa content__panel-heading-left-icon-picture"
-                  ></i
-                ></span>
-              </div>
-              <div class="content__panel-heading-left-box">
-                <p>Dashboard</p>
-              </div>
-            </div>
-            <div class="content__panel-heading-right">
-              <div class="content__panel-heading-right-icon">
-                <span class="content__panel-heading-right-icon-round">
-                  <i
-                    class="fa-angle-down fa content__panel-heading-right-icon-picture "
-                  ></i
-                ></span>
-              </div>
-              <div class="content__panel-heading-right-box">
-                <i
-                  class="fa-external-link fa content__panel-heading-right-box-icon "
-                ></i>
-                <p class="content__panel-heading-right-box-text">
-                  5 user online
-                </p>
-                <span
-                  class="fa-angle-down fa content__panel-heading-right-box-picture"
-                ></span>
-              </div>
-            </div>
-          </div>
-          <!-- /.content__panel-heading -->
-          <div class="content__panel-tabs">
-            <ul class="tabs">
-              <li class="active">
-                <!--<div class="tabs-icon">-->
-                  <!--<span class="fa fa-adjust"></span>-->
-                <!--</div>-->
-                <a href="#tab1">Active Projects</a>
-              </li>
-              <li class="">
-				  <!--<div class="tabs-icon">-->
-					  <!--<span class="fa fa-telegram"></span>-->
-				  <!--</div>-->
-                <a href="#tab2" class="tabs__message">Messengers</a>
-              </li>
-              <div class="input__text">
-				  <input type="text" name="text" class="input__text-inner" placeholder="Search Project, User, Task, etc..." />
-			  </div>
-            </ul>
-            <!-- /.tabs -->
-			  <div class="summary__wrap">
-				  <div class="left-block">
-					  <div class="input-navigation">
-						  <div class="input__text">
-							  <input type="text" name="text" class="input__text-inner" placeholder="Search a Project with Name, Task, User..." />
-						  </div>
-						  <div class="init__right-block">
-							  <div class="tabs__content-status">
-								  <p class="tabs__content-status-text">New Projects (descending)</p>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-plus-circle"></i>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="input-dropdowns-wrap">
+<head>
+	<meta charset="UTF-8" />
+	<title>IdapApp</title>
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width height=device-height user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+</head>
 
-					  </div>
-					  <div class="input-dropdowns">
-						<div class="left-inner">
-							<div class="left-inner-percent">
-								<span class="percent">23%</span>
+<body>
+	<div class="app__wrapper">
+		<div class="application">
+			<div class="navbar">
+				<div class="navbar__wrap">
+					<div class="logo navbar__logo">
+						<img src="img/Bilder/dashboard_layout_03.jpg" class="navbar__ava" alt="ava" />
+						<span class="navbar__count">2</span>
+					</div>
+					<ul class="navbar__list">
+						<li class="navbar__list-element">
+							<div class="navbar__list-dots">
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
-							<p class="left-inner-text">Create Contact Formular</p>
+							<i class="fa-black-tie fa navbar__icon"></i>
+							<p class="navbar__list-text">Board</p>
+						</li>
+						<li class="navbar__list-element">
+							<div class="navbar__list-dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<i class=" fa-th-list fa navbar__icon"></i>
+							<span class="navbar__icon-span">9</span>
+							<p class="navbar__list-text">Projects</p>
+						</li>
+						<li class="navbar__list-element">
+							<div class="navbar__list-dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<i class="fa-crosshairs fa navbar__icon"></i>
+							<p class="navbar__list-text">Settings</p>
+						</li>
+						<li class="navbar__list-element upgrade__element">
+							<i class="fa-asterisk fa navbar__icon"></i>
+							<span class="navbar__icon-span-logout">3</span>
+							<p class="navbar__list-text">Upgrade</p>
+						</li>
+						<li class="navbar__list-element">
+							<div class="navbar__list-dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<i class="fa-minus-circle fa navbar__icon"></i>
+							<p class="navbar__list-text">Logout</p>
+						</li>
+					</ul>
+				</div>
+				<!-- /navbar__wrap -->
+			</div>
+			<!-- /.navbar -->
+			<div class="content__panel">
+				<div class="content__panel-heading">
+					<div class="content__panel-heading-left">
+						<div class="content__panel-heading-left-icon">
+							<span class="content__panel-heading-left-icon-round">
+								<i class=" fa-refresh fa content__panel-heading-left-icon-picture"></i></span>
 						</div>
-						  <div class="right-inner">
-							  <div class="right-inner-worlda">worlda</div>
-							  <div class="init_icon">
-								  <i class="fa fa-search"></i>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-angle-down"></i>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="input-dropdowns">
-						  <div class="left-inner">
-							  <div class="left-inner-percent">
-								  <span class="percent">87%</span>
-							  </div>
-							  <p class="left-inner-text">Create Subpage PSD</p>
-						  </div>
-						  <div class="right-inner">
-							  <div class="right-inner-worlda ">panorama</div>
-							  <div class="init_icon">
-								  <i class="fa fa-search"></i>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-angle-down"></i>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="box__wrapper">
-						  <div class="input-dropdowns">
-							  <div class="left-inner">
-								  <div class="left-inner-percent">
-									  <span class="percent">83%</span>
-								  </div>
-								  <p class="left-inner-text">Layout & implementation in HTML & CSS
-								  </p>
-							  </div>
-							  <div class="right-inner">
-								  <div class="right-inner-worlda ">Ebay Relaunch</div>
-								  <div class="init_icon">
-									  <i class="fa fa-search"></i>
-								  </div>
-								  <div class="init_icon active">
-									  <i class="fa fa-angle-down"></i>
-								  </div>
-							  </div>
-						  </div>
-						  <div class="box__wrapper__input d-none">
-							  <div class="input-dropdowns bgc-primary-40 ">
-								  <div class="left-inner">
-									  <div class="left-inner-percent transparent">
-										  <span class="percent">66%</span>
-									  </div>
-									  <p class="left-inner-text">Creating the Context
-									  </p>
-								  </div>
-								  <div class="right-inner">
-									  <div class="avatar-block"><img src="img/Ebene%2057.png" class="ava" alt=""><span class="count"></span></div>
-									  <div class="avatar-block"><img src="img/Ebene%2058.png" class="ava" alt=""><span class="count"></span></div>
-									  <div class="avatar-block"><img src="img/Ebene%2063.png" class="ava" alt=""><span class="count offline"></span></div>
-									  <div class="init_icon mr-10">
-										  <span class="init_inner">+3</span>
-									  </div>
-									  <div class="right-inner-worlda ">
-										  <i class="fa fa-refresh grey-1 pr-10"></i>
-										  <p class="right-inner-text">Today, 13:40 PM</p>
-									  </div>
-									  <div class="init_icon">
-										  <i class="fa fa-search"></i>
-									  </div>
-								  </div>
-							  </div>
-							  <div class="input-dropdowns bgc-primary-40 ">
-								  <div class="left-inner">
-									  <div class="left-inner-percent transparent">
-										  <span class="percent ttu fz-12">ready</span>
-									  </div>
-									  <p class="left-inner-text-dark underline">Implementation in the Layout
-									  </p>
-									  <i class="fa fa-check ui-service"></i>
-								  </div>
-								  <div class="right-inner">
-									  <div class="avatar-block"><img src="img/Ebene%2058.png" class="ava" alt=""><span class="count"></span></div>
-									  <div class="avatar-block"><img src="img/Ebene%2063.png" class="ava" alt=""><span class="count offline"></span></div>
-									  <div class="right-inner-worlda ">
-										  <i class="fa fa-refresh grey-1 pr-10"></i>
-										  <p class="right-inner-text">Yestarday, 12:40 PM</p>
-									  </div>
-									  <div class="init_icon">
-										  <i class="fa fa-search"></i>
-									  </div>
-								  </div>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="input-dropdowns">
-						  <div class="left-inner">
-							  <div class="left-inner-percent">
-								  <span class="percent">23%</span>
-							  </div>
-							  <p class="left-inner-text">Lorem ipsum dolor sit amet, elitr, sed diam
-								  nonumy eirmod tempor
-							  </p>
-						  </div>
-						  <div class="right-inner">
-							  <div class="right-inner-worlda ">panorama</div>
-							  <div class="init_icon">
-								  <i class="fa fa-search"></i>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-angle-down"></i>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="input-dropdowns">
-						  <div class="left-inner">
-							  <div class="left-inner-percent">
-								  <span class="percent">98%</span>
-							  </div>
-							  <p class="left-inner-text">Create Contact formular
-							  </p>
-						  </div>
-						  <div class="right-inner">
-							  <div class="right-inner-worlda ">worlda</div>
-							  <div class="init_icon">
-								  <i class="fa fa-search"></i>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-angle-down"></i>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="input-dropdowns">
-						  <div class="left-inner">
-							  <div class="left-inner-percent">
-								  <span class="percent">98%</span>
-							  </div>
-							  <p class="left-inner-text">Create Contact formular
-							  </p>
-						  </div>
-						  <div class="right-inner">
-							  <div class="right-inner-worlda ">worlda</div>
-							  <div class="init_icon">
-								  <i class="fa fa-search"></i>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-angle-down"></i>
-							  </div>
-						  </div>
-					  </div>
-					  <div class="input-dropdowns">
-						  <div class="left-inner">
-							  <div class="left-inner-percent">
-								  <span class="percent">98%</span>
-							  </div>
-							  <p class="left-inner-text">Create Contact formular
-							  </p>
-						  </div>
-						  <div class="right-inner">
-							  <div class="right-inner-worlda ">worlda</div>
-							  <div class="init_icon">
-								  <i class="fa fa-search"></i>
-							  </div>
-							  <div class="init_icon">
-								  <i class="fa fa-angle-down"></i>
-							  </div>
-						  </div>
-					  </div>
+						<div class="content__panel-heading-left-box">
+							<p>Dashboard</p>
+						</div>
+					</div>
+					<div class="content__panel-heading-right">
+						<div class="content__panel-heading-right-icon">
+							<span class="content__panel-heading-right-icon-round">
+								<i class="fa-angle-down fa content__panel-heading-right-icon-picture "></i></span>
+						</div>
+						<div class="content__panel-heading-right-box">
+							<i class="fa-external-link fa content__panel-heading-right-box-icon "></i>
+							<p class="content__panel-heading-right-box-text">
+								5 user online
+							</p>
+							<span class="fa-angle-down fa content__panel-heading-right-box-picture"></span>
+						</div>
+					</div>
+				</div>
+				<!-- /.content__panel-heading -->
+				<div class="content__panel-tabs">
+					<ul class="tabs">
+						<li class="active">
+							<!--<div class="tabs-icon">-->
+							<!--<span class="fa fa-adjust"></span>-->
+							<!--</div>-->
+							<a href="#tab1">Active Projects</a>
+						</li>
+						<li class="">
+							<!--<div class="tabs-icon">-->
+							<!--<span class="fa fa-telegram"></span>-->
+							<!--</div>-->
+							<a href="#tab2" class="tabs__message">Messengers</a>
+						</li>
+						<div class="input__text">
+							<input type="text" name="text" class="input__text-inner"
+								placeholder="Search Project, User, Task, etc..." />
+						</div>
+					</ul>
+					<!-- /.tabs -->
+					<div class="summary__wrap">
+						<div class="left-block">
+							<div class="input-navigation">
+								<div class="input__text">
+									<input type="text" name="text" class="input__text-inner"
+										placeholder="Search a Project with Name, Task, User..." />
+								</div>
+								<div class="init__right-block">
+									<div class="tabs__content-status">
+										<p class="tabs__content-status-text">New Projects (descending)</p>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-plus-circle"></i>
+									</div>
+								</div>
+							</div>
+							<div class="input-dropdowns-wrap">
 
-					  <div class="input-dropdowns">
-					  <div class="left-inner">
-						  <div class="left-inner-percent">
-							  <span class="percent">98%</span>
-						  </div>
-						  <p class="left-inner-text">Create Contact formular
-						  </p>
-					  </div>
-					  <div class="right-inner">
-						  <div class="right-inner-worlda ">worlda</div>
-						  <div class="init_icon">
-							  <i class="fa fa-search"></i>
-						  </div>
-						  <div class="init_icon">
-							  <i class="fa fa-angle-down"></i>
-						  </div>
-					  </div>
-				  </div>
-					  <div class="project__block">
-						  <p class="project__block-text">
-							  Project Archiv
-						  </p>
-					  </div>
-				  </div>
-				  <div class="right-block">
-					  <div class="chat-content">eeee</div>
-				  </div>
-			  </div>
-          </div>
-          <!-- /.content__panel-tabs -->
-        </div>
-        <!-- /.content__panel -->
-      </div>
-      <!-- /.application -->
-    </div>
-    <!-- /.app__wrapper -->
+							</div>
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">23%</span>
+									</div>
+									<p class="left-inner-text">Create Contact Formular</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda">worlda</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">87%</span>
+									</div>
+									<p class="left-inner-text">Create Subpage PSD</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda ">panorama</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="box__wrapper">
+								<div class="input-dropdowns">
+									<div class="left-inner">
+										<div class="left-inner-percent">
+											<span class="percent">83%</span>
+										</div>
+										<p class="left-inner-text">Layout & implementation in HTML & CSS
+										</p>
+									</div>
+									<div class="right-inner">
+										<div class="right-inner-worlda ">Ebay Relaunch</div>
+										<div class="init_icon">
+											<i class="fa fa-search"></i>
+										</div>
+										<div class="init_icon active">
+											<i class="fa fa-angle-down"></i>
+										</div>
+									</div>
+								</div>
+								<div class="box__wrapper__input d-none">
+									<div class="input-dropdowns bgc-primary-40 ">
+										<div class="left-inner">
+											<div class="left-inner-percent transparent">
+												<span class="percent">66%</span>
+											</div>
+											<p class="left-inner-text">Creating the Context
+											</p>
+										</div>
+										<div class="right-inner">
+											<div class="avatar-block"><img src="img/Ebene%2057.png" class="ava"
+													alt=""><span class="count"></span></div>
+											<div class="avatar-block"><img src="img/Ebene%2058.png" class="ava"
+													alt=""><span class="count"></span></div>
+											<div class="avatar-block"><img src="img/Ebene%2063.png" class="ava"
+													alt=""><span class="count offline"></span></div>
+											<div class="init_icon mr-10">
+												<span class="init_inner">+3</span>
+											</div>
+											<div class="right-inner-worlda ">
+												<i class="fa fa-refresh grey-1 pr-10"></i>
+												<p class="right-inner-text">Today, 13:40 PM</p>
+											</div>
+											<div class="init_icon">
+												<i class="fa fa-search"></i>
+											</div>
+										</div>
+									</div>
+									<div class="input-dropdowns bgc-primary-40 ">
+										<div class="left-inner">
+											<div class="left-inner-percent transparent">
+												<span class="percent ttu fz-12">ready</span>
+											</div>
+											<p class="left-inner-text-dark underline">Implementation in the Layout
+											</p>
+											<i class="fa fa-check ui-service"></i>
+										</div>
+										<div class="right-inner">
+											<div class="avatar-block"><img src="img/Ebene%2058.png" class="ava"
+													alt=""><span class="count"></span></div>
+											<div class="avatar-block"><img src="img/Ebene%2063.png" class="ava"
+													alt=""><span class="count offline"></span></div>
+											<div class="right-inner-worlda ">
+												<i class="fa fa-refresh grey-1 pr-10"></i>
+												<p class="right-inner-text">Yestarday, 12:40 PM</p>
+											</div>
+											<div class="init_icon">
+												<i class="fa fa-search"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">23%</span>
+									</div>
+									<p class="left-inner-text">Lorem ipsum dolor sit amet, elitr, sed diam
+										nonumy eirmod tempor
+									</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda ">panorama</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">98%</span>
+									</div>
+									<p class="left-inner-text">Create Contact formular
+									</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda ">worlda</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">98%</span>
+									</div>
+									<p class="left-inner-text">Create Contact formular
+									</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda ">worlda</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">98%</span>
+									</div>
+									<p class="left-inner-text">Create Contact formular
+									</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda ">worlda</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="input-dropdowns">
+								<div class="left-inner">
+									<div class="left-inner-percent">
+										<span class="percent">98%</span>
+									</div>
+									<p class="left-inner-text">Create Contact formular
+									</p>
+								</div>
+								<div class="right-inner">
+									<div class="right-inner-worlda ">worlda</div>
+									<div class="init_icon">
+										<i class="fa fa-search"></i>
+									</div>
+									<div class="init_icon">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="project__block">
+								<p class="project__block-text">
+									Project Archiv
+								</p>
+							</div>
+						</div>
+						<div class="right-block">
+							<ul class="users-listing">
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Mark P.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Marvin S.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Sebastian K.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Mark P.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Philip O.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Mark P.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								<li class="users-listing-online">
+									<div class="users-ava">
+										<img src="./img/Ebene 57.png" alt="" class="avatar">
+										<span class="count"></span>
+									</div>
+									<div class="users-description">
+										<p class="users-description-text"><span>Benni I.</span> add an Image into Worlda</p>
+										<span class="users-description-status">Today, 10:30 PM</span>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- /.content__panel-tabs -->
+			</div>
+			<!-- /.content__panel -->
+		</div>
+		<!-- /.application -->
+	</div>
+	<!-- /.app__wrapper -->
 	<script src="scripts/script.js"></script>
-  </body>
+</body>
+
 </html>

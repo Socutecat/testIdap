@@ -1,0 +1,43 @@
+.users-listing {
+	width: 100%;
+	&-online {
+		display: flex;
+		justify-content: flex-start;
+		cursor: pointer;
+		padding-top: 17px;
+		padding-bottom: 25px;
+		padding-left: 32px;
+		border-bottom: 1px solid #e2e3e3;
+	}
+	.users-ava {
+		position: relative;
+		margin-right: 10px;
+		.count {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: var(--green);
+			border: 1px solid var(--white);
+		}
+	}
+	.users-description {
+		&-text {
+			font-size: 18px;
+			font-weight: 300;
+			color: var(--primary50);
+			white-space: nowrap;
+			span {
+				font-weight: bold;
+				color: var(--primary);
+			}
+		}
+		&-status {
+			color: var(--primary60);
+			font-size: 14px;
+		}
+	}
+}
+
